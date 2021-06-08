@@ -1,0 +1,671 @@
+@font-face {
+  font-family: 'aki';
+  src: url(../media/akka.ttf); }
+
+body {
+  margin: 0%; }
+
+.colorFondo {
+  margin: 0%;
+  background: linear-gradient(to top, #c8e7f5 40%, #46a4f1 100%); }
+
+/*PANTALLA GRANDE*/
+@media only screen and (min-width: 769px) {
+  /*INDEX*/
+  .cajaTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    height: 60vh; }
+    .cajaTitulo__estilo {
+      color: rgba(0, 0, 0, 0.932);
+      font-family: 'Signika', sans-serif; }
+      .cajaTitulo__estilo h1 {
+        font-size: 5.4em; }
+  .cajaVideo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 120px; }
+    .cajaVideo__video {
+      width: 35%;
+      margin: 60px; }
+      .cajaVideo__video video {
+        max-width: 100%;
+        border-radius: 5px;
+        border: solid; }
+      .cajaVideo__video p {
+        text-align: center; }
+    .cajaVideo__texto {
+      margin: 60px; }
+      .cajaVideo__texto h3 {
+        font-size: 2.3vw;
+        font-family: 'Signika', sans-serif; }
+      .cajaVideo__texto p {
+        font-size: 2vw;
+        font-family: 'Signika', sans-serif;
+        margin-top: 35px;
+        margin-bottom: 35px; }
+  .cajaMinGaleria {
+    margin: 50px; }
+    .cajaMinGaleria__subTitulo {
+      text-align: center;
+      font-size: 2.5rem;
+      font-family: 'Signika', sans-serif;
+      margin-bottom: 0%; }
+    .cajaMinGaleria__fotos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: 100%;
+      margin-bottom: 50px; }
+  /*PAGINA GALERIA*/
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%; }
+  .cajaTituloGaleria {
+    display: flex;
+    justify-content: center; }
+    .cajaTituloGaleria p {
+      font-family: 'Signika', sans-serif;
+      text-align: center;
+      font-size: 135%;
+      margin: 0px 15px 1rem 15px; }
+  .tituloGaleria {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Signika', sans-serif;
+    margin-bottom: 0%;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 40px; }
+    .tituloGaleria__negro--activo {
+      color: white;
+      background-color: black; }
+    .tituloGaleria__directionColumn--activo {
+      flex-direction: column; }
+  .cajaSubTitulo {
+    padding-top: 10px;
+    padding-bottom: 30px; }
+    .cajaSubTitulo__titulo {
+      text-align: center;
+      font-size: 2.5rem;
+      font-family: 'Signika', sans-serif;
+      margin-bottom: 0%; }
+  .botones {
+    display: flex;
+    justify-content: center;
+    margin: 30px 10px; }
+    .botones__estilo {
+      font-size: 20px;
+      margin: 0px 8px;
+      line-height: 32px;
+      width: 48px;
+      padding: 6px 12px 6px 12px;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      background-color: #031a2c;
+      color: white; }
+      .botones__estilo:hover {
+        background-color: #0c4f83; }
+    .botones--pagActual {
+      background-color: #1692f1; }
+      .botones--pagActual:hover {
+        background-color: #56adf0; }
+  /*PAGINA CONTACTO*/
+  .formulario {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    flex-wrap: wrap; }
+    .formulario p {
+      font-family: 'Signika', sans-serif;
+      font-size: 135%;
+      width: 100%;
+      text-align: center;
+      margin: 0px; }
+    .formulario__area {
+      width: 50%;
+      padding: 5px; }
+    .formulario__nameAndEmailBox {
+      width: 40%; }
+    .formulario__nameAndEmail {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: space-around;
+      display: flex; }
+    .formulario__estilo {
+      border-style: none;
+      background-color: white;
+      border-radius: 5px;
+      width: 100%; }
+    .formulario__comentario {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+    .formulario__comentarioArea {
+      width: 95%; }
+    .formulario__comentarioEstilo {
+      width: 100%;
+      border-style: none;
+      background-color: white;
+      border-radius: 5px; }
+    .formulario__boton {
+      border-style: none;
+      background-color: white;
+      border-radius: 5px;
+      margin-top: 10px;
+      padding-left: 25px;
+      padding-right: 25px; }
+      .formulario__boton:hover {
+        background-color: grey;
+        color: white; }
+    .formulario__redes {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100%; }
+      .formulario__redes a {
+        color: black;
+        text-decoration: none; }
+      .formulario__redes a:hover {
+        color: #838383; }
+  /*QUIENES SOMOS*/
+  .quienesSomos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px; }
+    .quienesSomos__subTitulo {
+      display: flex;
+      justify-content: center;
+      font-family: 'Signika', sans-serif;
+      margin: 20px; }
+      .quienesSomos__subTitulo p {
+        font-size: 1.3rem;
+        margin: 0%; }
+    .quienesSomos__titulo {
+      display: flex;
+      justify-content: center;
+      font-family: 'Signika', sans-serif;
+      margin: 0px 20px 20px 20px; }
+      .quienesSomos__titulo h2 {
+        margin: 0%;
+        text-align: center;
+        font-size: 3rem;
+        width: 70%; }
+    .quienesSomos__texto {
+      display: flex;
+      justify-content: center;
+      font-family: 'Signika', sans-serif;
+      margin: 0px 20px 20px 20px; }
+      .quienesSomos__texto p {
+        text-align: center;
+        font-size: 1.3rem; }
+    .quienesSomos__imgImpresora {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0px 25px 0px; }
+      .quienesSomos__imgImpresora div {
+        width: 35%; }
+        .quienesSomos__imgImpresora div img {
+          max-width: 100%;
+          border-radius: 5px; }
+        .quienesSomos__imgImpresora div p {
+          text-align: center;
+          font-family: 'Signika', sans-serif; }
+    .quienesSomos__nuestrosObjetivos {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-family: 'Signika', sans-serif;
+      margin: 130px 200px 170px 200px;
+      width: 43%; }
+      .quienesSomos__nuestrosObjetivos h2 {
+        font-size: 3.7rem;
+        margin-bottom: 12px; }
+      .quienesSomos__nuestrosObjetivos p {
+        font-size: 1.3rem; }
+    .quienesSomos__imgPersonas--contenido {
+      display: flex; }
+    .quienesSomos__imgPersonas {
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+      margin-bottom: 40px; }
+      .quienesSomos__imgPersonas div {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .quienesSomos__imgPersonas div img {
+          width: 190px;
+          border-radius: 100%;
+          background-color: whitesmoke;
+          padding: 10px; }
+        .quienesSomos__imgPersonas div p {
+          text-align: center;
+          font-family: 'Signika', sans-serif;
+          font-size: 110%;
+          margin: 20px 5px 20px 5px; }
+        .quienesSomos__imgPersonas div h4 {
+          margin-top: 20px; }
+    .quienesSomos__imgPersonas--titulo h2 {
+      text-align: center;
+      font-family: 'Signika', sans-serif;
+      font-size: 3.7rem; }
+  /* MENU NAV */
+  .menuNav {
+    background: linear-gradient(to right, black, #1f67a1); }
+    .menuNav__contenido {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .menuNav__lista {
+      margin-bottom: 0%;
+      margin-right: 90px;
+      padding: 0%;
+      list-style-type: none;
+      width: 40vw;
+      display: flex;
+      justify-content: space-between; }
+    .menuNav__item {
+      display: inline-block; }
+      .menuNav__item a {
+        color: white;
+        text-decoration: none; }
+      .menuNav__item a:hover {
+        color: yellow; }
+    .menuNav__parrafo {
+      color: white;
+      padding-right: 10px;
+      margin-bottom: 0%; }
+    .menuNav__logo {
+      font-size: 40px;
+      font-family: 'aki';
+      font-weight: 100;
+      margin: 0%;
+      padding-left: 10px; }
+      .menuNav__logo a {
+        color: white;
+        text-decoration: none; }
+  .positionSticky {
+    position: sticky;
+    top: 0;
+    z-index: 10; }
+  /*TARJETAS IMAGENES*/
+  .card {
+    margin: 40px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0.8px solid black; }
+    .card__img {
+      max-width: 100%; }
+    .card__parrafo {
+      padding: 6px 10px;
+      width: 100%; }
+      .card__parrafo p {
+        color: black; }
+  /*FOOTER*/
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #031a2c;
+    height: 13rem;
+    color: white; }
+    .footer__redesLogos {
+      display: flex;
+      justify-content: space-around; }
+      .footer__redesLogos a {
+        color: white;
+        text-decoration: none; }
+      .footer__redesLogos a:hover {
+        color: #9c9c9c; }
+    .footer__redes {
+      margin-bottom: 15px; }
+    .footer__powered {
+      font-family: 'Signika', sans-serif; }
+    .footer__name {
+      font-family: 'Signika', sans-serif; } }
+
+/*MOBILES*/
+@media only screen and (max-width: 768px) {
+  /*INDEX*/
+  .cajaTitulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px; }
+    .cajaTitulo__estilo {
+      color: rgba(0, 0, 0, 0.932);
+      font-family: 'Signika', sans-serif; }
+      .cajaTitulo__estilo h1 {
+        font-size: 12.5vw; }
+  .cajaVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px; }
+    .cajaVideo__video {
+      width: 65%; }
+      .cajaVideo__video video {
+        max-width: 100%;
+        border-radius: 5px;
+        border: solid; }
+      .cajaVideo__video p {
+        text-align: center;
+        font-size: 13px; }
+    .cajaVideo__texto {
+      margin: 50px; }
+      .cajaVideo__texto h3 {
+        text-align: center;
+        font-size: 6vw;
+        font-family: 'Signika', sans-serif; }
+      .cajaVideo__texto p {
+        font-size: 3.8vw;
+        font-family: 'Signika', sans-serif;
+        margin-top: 35px;
+        margin-bottom: 35px; }
+  .cajaMinGaleria {
+    margin: 0px 25px 15px 25px; }
+    .cajaMinGaleria__subTitulo {
+      text-align: center;
+      font-size: 7.5vw;
+      font-family: 'Signika', sans-serif;
+      margin-bottom: 0%; }
+    .cajaMinGaleria__fotos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: 100%;
+      margin-bottom: 50px; }
+  /*PAGINA GALERIA*/
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%; }
+  .cajaTituloGaleria {
+    display: flex;
+    justify-content: center; }
+    .cajaTituloGaleria p {
+      font-family: 'Signika', sans-serif;
+      text-align: center;
+      font-size: 135%;
+      margin: 0px 15px 1rem 15px; }
+  .tituloGaleria {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Signika', sans-serif;
+    margin-bottom: 0%;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 40px; }
+    .tituloGaleria__negro--activo {
+      color: white;
+      background-color: black; }
+    .tituloGaleria__directionColumn--activo {
+      flex-direction: column; }
+  .cajaSubTitulo {
+    padding-top: 10px;
+    padding-bottom: 30px; }
+  .subTitulo {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Signika', sans-serif;
+    margin-bottom: 0%; }
+  .botones {
+    display: flex;
+    justify-content: center;
+    margin: 30px 10px; }
+    .botones__estilo {
+      font-size: 20px;
+      margin: 0px 4px;
+      line-height: 35px;
+      width: 45px;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      background-color: #031a2c;
+      color: white; }
+      .botones__estilo:hover {
+        background-color: #0c4f83; }
+    .botones--pagActual {
+      background-color: #1692f1; }
+      .botones--pagActual:hover {
+        background-color: #56adf0; }
+  /*PAGINA CONTACTO*/
+  .formulario {
+    display: grid;
+    grid-template-rows: 80px 253.6px 108px 68px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-top: 40px; }
+    .formulario p {
+      font-family: 'Signika', sans-serif;
+      margin: 0;
+      text-align: center;
+      padding: 10px; }
+    .formulario__areaUno {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 2;
+      grid-column-end: 5; }
+    .formulario__areaDos {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 5; }
+    .formulario__areaTres {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 6; }
+      .formulario__areaTres div {
+        margin: 15px; }
+    .formulario__areaCuatro {
+      grid-row-start: 4;
+      grid-row-end: 5;
+      grid-column-start: 1;
+      grid-column-end: 6; }
+    .formulario__nameAndEmailBox {
+      margin-bottom: 10px; }
+    .formulario__estilo {
+      width: 100%;
+      border-style: none;
+      background-color: white;
+      border-radius: 5px; }
+    .formulario__comentarioEstilo {
+      width: 100%;
+      border-style: none;
+      background-color: white;
+      border-radius: 5px; }
+    .formulario__botonMobile {
+      display: flex;
+      justify-content: flex-end; }
+    .formulario__boton {
+      border-style: none;
+      background-color: white;
+      border-radius: 5px;
+      margin-top: 10px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      .formulario__boton:hover {
+        background-color: grey;
+        color: white; }
+    .formulario__redes {
+      display: none;
+      justify-content: space-evenly;
+      margin: 7px; }
+      .formulario__redes a {
+        color: black;
+        text-decoration: none; }
+      .formulario__redes a:hover {
+        color: #838383; }
+  /*QUIENES SOMOS*/
+  .quienesSomos {
+    display: flex;
+    flex-direction: column; }
+    .quienesSomos__subTitulo {
+      display: flex;
+      justify-content: center;
+      font-family: 'Signika', sans-serif;
+      margin: 20px; }
+      .quienesSomos__subTitulo p {
+        font-size: 125%;
+        margin: 0%; }
+    .quienesSomos__titulo {
+      display: flex;
+      justify-content: center;
+      font-family: 'Signika', sans-serif;
+      margin: 0px 20px 20px 20px; }
+      .quienesSomos__titulo h2 {
+        margin: 0%;
+        text-align: center;
+        font-size: 27px; }
+    .quienesSomos__texto {
+      display: flex;
+      justify-content: center;
+      font-family: 'Signika', sans-serif;
+      margin: 0px 20px 20px 20px; }
+      .quienesSomos__texto p {
+        text-align: center; }
+    .quienesSomos__imgImpresora {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0px 25px 0px; }
+      .quienesSomos__imgImpresora div {
+        width: 60%; }
+        .quienesSomos__imgImpresora div img {
+          max-width: 100%;
+          border-radius: 5px; }
+        .quienesSomos__imgImpresora div p {
+          text-align: center;
+          font-family: 'Signika', sans-serif; }
+    .quienesSomos__nuestrosObjetivos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Signika', sans-serif;
+      margin: 0px 25px 20px 25px; }
+      .quienesSomos__nuestrosObjetivos h2 {
+        text-align: center;
+        font-size: 27px;
+        margin-bottom: 12px; }
+      .quienesSomos__nuestrosObjetivos p {
+        text-align: center; }
+    .quienesSomos__imgPersonas {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 40px; }
+      .quienesSomos__imgPersonas div {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .quienesSomos__imgPersonas div img {
+          width: 150px;
+          border-radius: 100%;
+          background-color: whitesmoke;
+          padding: 10px; }
+        .quienesSomos__imgPersonas div p {
+          text-align: center;
+          font-family: 'Signika', sans-serif;
+          font-size: 110%;
+          margin: 20px 5px 20px 5px; }
+        .quienesSomos__imgPersonas div h4 {
+          margin-top: 20px; }
+    .quienesSomos__imgPersonas--titulo {
+      margin: 60px 0px 30px 0px; }
+      .quienesSomos__imgPersonas--titulo h2 {
+        text-align: center;
+        font-family: 'Signika', sans-serif;
+        font-size: 27px; }
+  /* MENU NAV */
+  .menuNav {
+    background: linear-gradient(to right, black, #1f67a1); }
+    .menuNav__contenido {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .menuNav__lista {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      width: 95vw;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-left: 0%; }
+    .menuNav__item {
+      display: inline-block; }
+      .menuNav__item a {
+        text-decoration: none;
+        color: white; }
+      .menuNav__item a:hover {
+        color: yellow; }
+    .menuNav__logo {
+      font-size: 40px;
+      font-family: 'aki';
+      font-weight: 100;
+      margin: 0%; }
+      .menuNav__logo a {
+        color: white;
+        text-decoration: none; }
+    .menuNav__parrafo {
+      display: none; }
+  .positionSticky {
+    position: sticky;
+    top: 0;
+    z-index: 10; }
+  /*TARJETAS IMAGENES*/
+  .card {
+    margin: 40px;
+    width: 300px;
+    background-color: white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0.8px solid black; }
+    .card__img {
+      max-width: 100%; }
+    .card__parrafo {
+      padding: 6px 10px;
+      width: 100%; }
+      .card__parrafo p {
+        color: black;
+        text-align: center; }
+  /*FOOTER*/
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #031a2c;
+    height: 11rem;
+    color: white;
+    flex-direction: column; }
+    .footer__redesLogos {
+      display: flex;
+      justify-content: space-around; }
+      .footer__redesLogos a {
+        color: white;
+        text-decoration: none; }
+      .footer__redesLogos a:hover {
+        color: #9c9c9c; }
+    .footer__redes {
+      margin-bottom: 15px; }
+    .footer__powered {
+      font-family: 'Signika', sans-serif; }
+    .footer__name {
+      font-family: 'Signika', sans-serif; } }
