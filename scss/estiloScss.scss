@@ -10,7 +10,7 @@ body{
     background: linear-gradient(to top, rgb(200, 231, 245)40%, rgb(70, 164, 241)100%);   
 }
 
-/*PANTALLA GRANDE*/
+/*PANTALLA LAPTOP*/
 @media only screen and (min-width: 769px) {
     /*INDEX*/
     .cajaTitulo{
@@ -154,6 +154,20 @@ body{
             &:hover{
                 background-color: rgb(86, 173, 240);
             }
+        }
+
+        &__estiloGal{
+            font-size: 20px;
+            margin: 0px 8px;
+            line-height: 32px;
+            padding: 6px 12px 6px 12px;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            background-color: rgb(3, 26, 44);
+            color: white;
+        &:hover{
+            background-color: rgb(12, 79, 131);
+        }
         }
     }                           
     
@@ -488,8 +502,6 @@ body{
 
 }
 
-
-
 /*MOBILES*/
 @media only screen and (max-width: 768px) {
         /*INDEX*/
@@ -627,12 +639,27 @@ body{
             background-color: rgb(12, 79, 131);
         }
         }
+
         &--pagActual{
             background-color: rgb(22, 146, 241);
 
             &:hover{
                 background-color: rgb(86, 173, 240);
             }
+        }
+
+        &__estiloGal{
+            font-size: 20px;
+            margin: 0px 8px;
+            line-height: 32px;
+            padding: 6px 12px 6px 12px;
+            border: 1px solid transparent;
+            border-radius: .25rem;
+            background-color: rgb(3, 26, 44);
+            color: white;
+        &:hover{
+            background-color: rgb(12, 79, 131);
+        }
         }
     }  
 
@@ -916,6 +943,10 @@ body{
         border-bottom-right-radius: 10px;
         border: 0.8px solid black;
 
+        &--oculto{
+            display: none;
+        }
+
         &__img{
             max-width: 100%;
             
@@ -969,4 +1000,42 @@ body{
         }
     }
 
+}
+
+/*PANTALLA GRANDE*/
+@media only screen and (min-width: 1550px){
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    /*TARJETAS IMAGENES*/
+    .card{
+        margin: 40px;
+        margin-left: 200px;
+        margin-right: 200px;
+        width: 300px;
+        height: 400px;
+        background-color: white;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: 0.8px solid black;
+
+        &__img{
+            max-width: 100%;
+            
+        }
+
+        &__parrafo{
+            padding: 6px 10px;
+            width: 100%;
+            p{
+                color: black;
+            }
+        }
+    }
 }

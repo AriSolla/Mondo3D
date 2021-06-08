@@ -9,7 +9,7 @@ body {
   margin: 0%;
   background: linear-gradient(to top, #c8e7f5 40%, #46a4f1 100%); }
 
-/*PANTALLA GRANDE*/
+/*PANTALLA LAPTOP*/
 @media only screen and (min-width: 769px) {
   /*INDEX*/
   .cajaTitulo {
@@ -115,6 +115,17 @@ body {
       background-color: #1692f1; }
       .botones--pagActual:hover {
         background-color: #56adf0; }
+    .botones__estiloGal {
+      font-size: 20px;
+      margin: 0px 8px;
+      line-height: 32px;
+      padding: 6px 12px 6px 12px;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      background-color: #031a2c;
+      color: white; }
+      .botones__estiloGal:hover {
+        background-color: #0c4f83; }
   /*PAGINA CONTACTO*/
   .formulario {
     display: flex;
@@ -445,6 +456,17 @@ body {
       background-color: #1692f1; }
       .botones--pagActual:hover {
         background-color: #56adf0; }
+    .botones__estiloGal {
+      font-size: 20px;
+      margin: 0px 8px;
+      line-height: 32px;
+      padding: 6px 12px 6px 12px;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      background-color: #031a2c;
+      color: white; }
+      .botones__estiloGal:hover {
+        background-color: #0c4f83; }
   /*PAGINA CONTACTO*/
   .formulario {
     display: grid;
@@ -638,6 +660,8 @@ body {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border: 0.8px solid black; }
+    .card--oculto {
+      display: none; }
     .card__img {
       max-width: 100%; }
     .card__parrafo {
@@ -669,3 +693,31 @@ body {
       font-family: 'Signika', sans-serif; }
     .footer__name {
       font-family: 'Signika', sans-serif; } }
+
+/*PANTALLA GRANDE*/
+@media only screen and (min-width: 1550px) {
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100%; }
+  /*TARJETAS IMAGENES*/
+  .card {
+    margin: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0.8px solid black; }
+    .card__img {
+      max-width: 100%; }
+    .card__parrafo {
+      padding: 6px 10px;
+      width: 100%; }
+      .card__parrafo p {
+        color: black; } }
