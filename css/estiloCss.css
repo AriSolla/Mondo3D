@@ -694,18 +694,14 @@ body {
     .footer__name {
       font-family: 'Signika', sans-serif; } }
 
-/*PANTALLA GRANDE*/
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1980px) {
   .galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     height: 100%; }
-  /*TARJETAS IMAGENES*/
   .card {
-    margin: 40px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: 40px 180px 40px 180px;
     width: 300px;
     height: 400px;
     background-color: white;
@@ -713,11 +709,4 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: 0.8px solid black; }
-    .card__img {
-      max-width: 100%; }
-    .card__parrafo {
-      padding: 6px 10px;
-      width: 100%; }
-      .card__parrafo p {
-        color: black; } }
+    border: 0.8px solid black; } }

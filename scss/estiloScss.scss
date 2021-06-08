@@ -1002,20 +1002,16 @@ body{
 
 }
 
-/*PANTALLA GRANDE*/
-@media only screen and (min-width: 1550px){
+@media only screen and (min-width: 1980px){
     .galeria{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         height: 100%;
-    }
-
-    /*TARJETAS IMAGENES*/
+        }
+    
     .card{
-        margin: 40px;
-        margin-left: 200px;
-        margin-right: 200px;
+        margin: 40px 180px 40px 180px;
         width: 300px;
         height: 400px;
         background-color: white;
@@ -1024,18 +1020,5 @@ body{
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border: 0.8px solid black;
-
-        &__img{
-            max-width: 100%;
-            
-        }
-
-        &__parrafo{
-            padding: 6px 10px;
-            width: 100%;
-            p{
-                color: black;
-            }
-        }
     }
-}
+    }
